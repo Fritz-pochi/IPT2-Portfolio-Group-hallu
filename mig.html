@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miguel flores Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<Style>
+    body {
+    font-family: 'Roboto', sans-serif; /* A versatile and readable font */
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Dark gray, gritty background */
+    color: #f0f0f0; /* Light gray text for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #222; /* Even darker header */
+    color: #fff;
+    width: 90%; /* Match main width */
+    max-width: 1400px;
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed #555; /* A more edgy border */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    padding-left: 5%; /* Align with nav */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5em;
+}
+
+nav ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 0.5em 0.8em;
+    border-radius: 5px;
+}
+
+nav ul li a.active {
+    color: #1aff00; /* Highlight the active link */
+}
+
+nav ul li a:hover {
+    color: #1aff00; /* Joker green hover */
+    background-color: rgba(26, 255, 0, 0.1);
+    text-shadow: 0 0 5px #1aff00;
+}
+
+main {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing */
+    align-items: center;
+    padding: 80px 5%; /* Add more vertical padding and use percentages for horizontal */
+    width: 90%;
+    max-width: 1400px; /* Slightly wider max width */
+}
+
+.left-section {
+    flex: 0 0 45%; /* Adjust width of the left section */
+    /* Add some visual interest to the image area */
+    border: 2px solid #444;
+    border-radius: 10px;
+    overflow: hidden; /* To contain any potential image effects */
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.left-section img {
+    display: block; /* Prevent extra space below image */
+    width: 100%;
+    height: auto;
+    filter: grayscale(80%); /* Desaturate the image for a moodier feel */
+    transition: filter 0.3s ease;
+}
+
+.left-section img:hover {
+    filter: grayscale(20%); /* Less desaturated on hover */
+}
+
+.right-section {
+    flex: 0 0 50%; /* Adjust width of the right section */
+    text-align: left;
+}
+
+.right-section h1 {
+    font-size: 3.8em;
+    margin-bottom: 0.3em;
+    color: #ffeb3b; /* Yellow for a touch of chaos */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* More prominent shadow */
+    line-height: 1.1;
+}
+
+.right-section p {
+    font-size: 1.2em;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.right-section p strong {
+    color: #e91e63; /* Hot pink for an unexpected pop */
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #1aff00; /* Joker green button */
+    color: #222;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact-button:hover {
+    background-color: #fff;
+    color: #1aff00;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Maybe add a subtle pattern or texture to the background */
+body {
+    /* Example subtle pattern - you can find more or use an image */
+    /* background-image: repeating-linear-gradient(45deg, #333, #333 10px, #222 10px, #222 20px); */
+}
+
+/* Animate the header border for a bit of movement */
+@keyframes dash-animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+header {
+    border-bottom: 2px dashed #555;
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: dash-animation 1s linear infinite alternate;
+}
+</Style>
+
+    <header>
+        <h1>Flores Miguel</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="left-section">
+            <img src="hi.jpg" alt="flores miguel">
+        </div>
+        <div class="right-section">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am an IT student with a strong skillset in  <strong>Network Administration</strong>, <strong>Software Development</strong>, and <strong>Data Analysis</strong>.</p>
+            <a href="#" class="contact-button">Contact Me</a>
+        </div>
+    </main>
+</body>
+</html>
