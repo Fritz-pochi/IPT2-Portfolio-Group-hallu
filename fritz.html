@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fritz FULO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<style>
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A more modern, tech-looking font */
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #ddd; /* Light gray text for better contrast on black */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #111; /* Darker background for the header */
+    color: #fff;
+    width: 100%;
+    padding: 1.5em 0;
+    border-bottom: 1px solid #333; /* Subtle separation */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1.5em;
+}
+
+nav ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: #00ffcc; /* Neon cyan hover effect */
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.left-section h1 {
+    font-size: 3.5em;
+    margin: 0;
+    line-height: 1;
+    color: #fff; /* White for the main name */
+}
+
+.left-section p {
+    font-size: 1.3em;
+    margin-top: 0.7em;
+    color: #888;
+}
+
+.left-section p:nth-child(3) {
+    color: #00ffcc; /* Neon cyan for "Design" */
+}
+
+.left-section p:nth-child(4) {
+    color: #ff00ff; /* Neon magenta for "Code" */
+}
+
+.left-section p:nth-child(5) {
+    color: #ffff00; /* Neon yellow for "Video Edit" */
+}
+
+.right-section img {
+    width: 320px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.3); /* Neon glow effect */
+    border: 2px solid #222; /* Dark border */
+}
+
+/* Add a subtle glow to the main text */
+.left-section h1 {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* More refined styling for the navigation links */
+nav ul li a {
+    padding: 0.5em 0.8em;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 255, 204, 0.1); /* Subtle background on hover */
+    text-shadow: 0 0 5px #00ffcc; /* Neon text glow on hover */
+}
+</style>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">My Works</a></li>
+                <li><a href="#">Talk to Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="left-section">
+            <h1>FRITZ</h1>
+            <h1>FULO</h1>
+            <p>I Design</p>
+            <p>I Code</p>
+            <p>I Video Edit</p>
+        </div>
+        <div class="right-section">
+            <img src="profile.jpg" alt="Kenneth Sevilla">
+        </div>
+    </main>
+</body>
+</html>
